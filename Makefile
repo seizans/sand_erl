@@ -17,8 +17,7 @@ pkg: compile
 	@./rebar3 as prod release
 
 test: compile
-	@./rebar3 eunit
-	@./rebar3 cover
+	@./rebar3 do eunit, cover
 
 clean:
 	@./rebar3 clean
